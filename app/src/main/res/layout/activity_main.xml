@@ -10,11 +10,11 @@
         android:id="@+id/edtname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
+        android:hint="First Name"
         android:inputType="textPersonName"
-        android:text="First Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +25,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Second Name"
         android:inputType="textPersonName"
-        android:text="Second Name"
         app:layout_constraintStart_toStartOf="@+id/edtname"
         app:layout_constraintTop_toBottomOf="@+id/edtname" />
 
@@ -62,5 +62,15 @@
         android:text="CREATE ACCOUNT"
         app:layout_constraintEnd_toEndOf="@+id/edtpassword"
         app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="LOGIN"
+        app:layout_constraintStart_toStartOf="@+id/btnaccount"
+        app:layout_constraintTop_toBottomOf="@+id/btnaccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

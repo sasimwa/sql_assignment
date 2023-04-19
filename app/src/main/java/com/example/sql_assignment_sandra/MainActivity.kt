@@ -1,6 +1,7 @@
 package com.example.sql_assignment_sandra
 
 import android.content.Context
+import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var edtEmail:EditText
     private lateinit var edtPassword:EditText
     private lateinit var btnCreate:Button
+    private lateinit var btnLogin:Button
     private lateinit var db:SQLiteDatabase
 
 
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         edtEmail = findViewById(R.id.edtemail)
         edtPassword = findViewById(R.id.edtpassword)
         btnCreate = findViewById(R.id.btnaccount)
+        btnLogin = findViewById(R.id.btnlogin)
 
         db = openOrCreateDatabase("SandraDB",Context.MODE_PRIVATE, null)
 
@@ -48,7 +51,13 @@ class MainActivity : AppCompatActivity() {
                 db.execSQL("INSERT INTO users VALUES('"+nam1+"','"+nam2+"','"+email+"','"+passcode+"')")
 
                 Toast.makeText(this, "USER CREATED SUCCESSFULLY", Toast.LENGTH_SHORT).show()
+
+
+                var gotologin = Intent(this, LoginActivity::class.java)
+                startActivity(gotologin)
             }
+
+
         }
 
 
