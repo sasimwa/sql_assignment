@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         db = openOrCreateDatabase("SandraDB",Context.MODE_PRIVATE, null)
 
 
-        db.execSQL("CREATE TABLE IF NOT EXISTS users(name VARCHAR ,name2 VARCHAR,email VARCHAR,password VARCHAR)")
+        db.execSQL("CREATE TABLE IF NOT EXISTS users(name VARCHAR ,name2 VARCHAR, email VARCHAR,password VARCHAR)")
 
         btnCreate.setOnClickListener {
 

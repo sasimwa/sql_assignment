@@ -10,44 +10,45 @@
         android:id="@+id/edtmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/edtpasscode"
-        app:layout_constraintStart_toStartOf="@+id/edtpasscode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edtpasscode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="86dp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnrgn"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edtmail"
         app:layout_constraintTop_toBottomOf="@+id/edtmail" />
 
     <Button
         android:id="@+id/btnlgin"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="313dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnrgn" />
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="52dp"
+        android:text="Login"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnrgn"
+        app:layout_constraintStart_toStartOf="@+id/btnrgn" />
 
     <Button
         android:id="@+id/btnrgn"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="79dp"
-        android:text="REGISTER"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnlgin"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginBottom="260dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
